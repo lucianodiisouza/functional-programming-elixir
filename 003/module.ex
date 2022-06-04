@@ -17,6 +17,21 @@ defmodule CreatingModule.SaySomething do
   sum = &(&1 + &2)
   """
 
+  def pipe_operator
+    # instead of
+    # str_len = String.length('elixir')
+    # IO.puts(str_len)
+    # do:
+    String.length('elixir') |> IO.puts
+    # or:
+    # "elixir" |> String.length |> IO.puts
+    # this works because in fn programming, the string will return itself
+
+    # "elixir"
+    # |> String.length
+    # |> IO.puts
+  end
+
 end
 
 # this will be accessed as CreatingModule.SaySomething.say_something
