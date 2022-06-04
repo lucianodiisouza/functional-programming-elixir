@@ -11,6 +11,12 @@ defmodule CreatingModule.SaySomething do
     to execute it, we need to run: sum.(1,2) (using the dot notation)
   """
 
+  @doc """"
+  for me, it seems weird, but elixir developers say that, it is a good practice:
+
+  sum = &(&1 + &2)
+  """
+
 end
 
 # this will be accessed as CreatingModule.SaySomething.say_something
